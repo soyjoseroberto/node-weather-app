@@ -1,13 +1,10 @@
-// Review Callstack, Node APIs (setTimeout), and Event loop and how they work
-console.log('Starting');
+const request = require('request');
 
-setTimeout(() => {
-    console.log('2 second timer');
+const url = 'http://api.weatherstack.com/current?access_key=insertyourkeyhere&query=37.8267,-122.4233';
 
-}, 2000);
+request({ url: url }, (error, response) => {
+    // console.log(response); // The whole response
+    const data = JSON.parse(response.body);
+    console.log(data.current);
 
-setTimeout(() => {
-    console.log('0 Second Timer');
-}, 0)
-
-console.log('Stopping');
+});

@@ -33,4 +33,4 @@ request({ url: geocodeURL, json: true }, (error, response) => {
     }
 });
 
-// pushing to github using ssh
+// pushing to github using ssh now that I've changed the remote URL

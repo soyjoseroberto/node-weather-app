@@ -16,7 +16,7 @@ const request = require('request');
 // });
 
 // Geocode using MapBox
-const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.95am9zZXJvYmVydG8iLCJhIjoiY2thM3I3N3Q4MHM2dDNlcXdoOTE4ZDlrMCJ9.qslcu2B2oXhuzZ9g07ok5w';
+const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1Ijoic295am9zZXJvYmVydG8iLCJhIjoiY2thM3I3N3Q4MHM2dDNlcXdoOTE4ZDlrMCJ9.qslcu2B2oXhuzZ9g07ok5w';
 
 request({ url: geocodeURL, json: true }, (error, response) => {
     if (error) {
@@ -32,3 +32,5 @@ request({ url: geocodeURL, json: true }, (error, response) => {
         console.log(response.body.features[0].center[0]); //longitud
     }
 });
+
+// pushing to github using ssh

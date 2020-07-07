@@ -18,3 +18,4 @@ http://api.weatherstack.com/current?access_key=1234567890&query=37.8267,-122.423
 
 Added this line from work pc to test new RSA key
 
+Adding this line after changing user and email on local repo.
